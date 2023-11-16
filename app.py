@@ -65,7 +65,7 @@ def main():
         end_index = wiki_extract.find('\n',0)
         store_name = wiki_extract[0:end_index-2]
 
-        st.write("The context is about " + store_name)
+        st.markdown("#### The context is about " + store_name)
         VectorStore = get_vector_store(store_name, chunks)
 
 
