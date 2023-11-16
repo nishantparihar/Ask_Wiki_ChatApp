@@ -50,7 +50,8 @@ def get_vector_store(store_name, chunks):
 
 
 def main():
-    url = st.text_input("Please Enter Wikipedia URL")
+    st.title('🤗💬 Chat with Wiki App')
+    url = st.text_input("### Please Enter Wikipedia URL")
 
     if url:
 
